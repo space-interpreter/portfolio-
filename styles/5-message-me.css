@@ -1,0 +1,25 @@
+/* 
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+
+.messageMe {
+  padding: 50px 0px 50px 0px;
+}
+
+.messageMe-header {
+  font-family: chicle;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.message-form h3 {
+  font-family: Atma;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding-top: 50px;
+}

@@ -1,0 +1,118 @@
+/* 
+
+  CSS doc for the hero section containg about me info
+
+*/
+/* ----------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+
+/* ---------------------- */
+/* flex box */
+.hero {
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 50px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* ----------------------- */
+.heroImage,
+.heroText {
+  width: 1fr;
+  padding: 15px 30px 15px 30px;
+}
+
+.heroImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -------------------------- */
+#hero-img {
+  width: 500px; /* clamp(50px, 500px, 512px); */
+  height: 612px; /* clamp(30%, 60%, 80%); */
+}
+/* -------------------------- */
+/* hero text section fonts and colours */
+.heroHeader {
+  font-family: Chicle;
+  font-size: /*2rem; */ clamp(1.5rem, calc(2.5vw + 1rem), 2rem);
+}
+.heroText p {
+  font-family: Atma;
+  font-size: clamp(1rem, calc(1.9vw + 1rem), 1.5rem);
+}
+
+/* -------------------------------------------------- */
+/* icons */
+
+/* -------------------------------------------------- */
+@media (max-width: 1016px) {
+  .hero {
+    gap: 10px;
+  }
+  .heroText {
+    gap: 10px;
+  }
+  /* ------------------------------------- */
+  /* hero text section fonts and colours */
+  .heroHeader {
+    font-size: clamp(1.5rem, calc(2vw + 1rem), 2rem);
+  }
+  .heroText p {
+    font-size: clamp(1rem, calc(1.5vw + 0.9rem), 2rem);
+  }
+  /* ------------------------------------------------ */
+  #hero-img {
+    width: 400px;
+  }
+}
+/* -------------------------------- */
+@media (max-width: 921px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #hero-img {
+    height: 500px;
+  }
+  .heroText p {
+    text-align: center;
+  }
+}
+/* ------------------------------------------ */
+@media (max-width: 375px) {
+}
+/* ---------------------------------------- */
+@media (max-width: 460px) {
+  #hero-img {
+    height: 500px;
+    width: 300px;
+  }
+  .heroText,
+  .heroImage {
+    width: auto;
+    padding: 10px;
+  }
+}

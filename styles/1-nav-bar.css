@@ -1,0 +1,116 @@
+/* 
+  
+CSS doc for Nav bar
+
+*/
+
+/* import fonts google-fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+/*  */
+/* things to reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #e7e7e7;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------ */
+/* Flex box  */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 30px 30px 30px 30px; */
+  font-family: Chicle;
+  border-bottom: 2px solid #000000;
+  background: #40b5ad;
+  position: sticky;
+  top: 0;
+}
+
+.navHeader,
+.navUl {
+  padding: 15px 30px 15px 30px;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: row;
+  width: 36rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------------- */
+/* nav links */
+.navUl li {
+  list-style: none;
+}
+
+/* ------------------------------ */
+/* nav heading and a */
+.navHeader h1 {
+  color: #000000;
+  font-size: clamp(1.8rem, calc(2.5vw + 1rem), 5rem);
+}
+
+.navUl li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: clamp(1.8rem, calc(1.9vw + 1rem), 2rem);
+  font-weight: 400;
+}
+
+/* ---------------------- */
+/* hover effect  */
+.navUl li a:hover {
+  transition: 0.3s;
+  color: #e7e7e7;
+}
+
+/* ------------------------- */
+/* Different screen sizes */
+
+/* For small sreen laptops or tablets */
+/* ------------------------ */
+@media (max-width: 909px) {
+  /* Nav Ul */
+  .navUl {
+    width: 60%;
+    gap: 20px;
+  }
+  /* font sizes for h1 and a  */
+  .navHeader h1 {
+    font-size: clamp(1.8rem, calc(2vw + 1rem), 5rem);
+  }
+  .navUl li a {
+    font-size: clamp(1rem, calc(1.5vw + 0.9rem), 2rem);
+  }
+}
+/* ---------------------- */
+@media (max-width: 692px) {
+  .navBar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .navHeader,
+  .navUl {
+    padding: 10px;
+  }
+  /* Nav Ul */
+  .navUl {
+    width: 100%;
+    gap: 10px;
+  }
+  /* -------------------------- */
+  /* font sizes for h1 */
+  .navHeader h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+}

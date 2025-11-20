@@ -1,0 +1,77 @@
+/* 
+
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Chicle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap");
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectSlots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+/* ----------------------------- */
+/* project slot a tag */
+.project-slot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  width: 17rem;
+  height: 22rem;
+  text-decoration: none;
+  color: #000000;
+  transition: ease-out 0.2s;
+}
+
+/* -------------------------- */
+/* project image */
+#projectSlot {
+  width: 15rem;
+  height: 14rem;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  transition: ease-in 0.3s;
+}
+/* -------------------------------- */
+/* fonts */
+.project-slot h3 {
+  font-family: Chicle;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.project-slot p {
+  font-family: Atma;
+  font-size: 1.2rem;
+}
+.projectHeader h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  font-family: Chicle;
+}
+
+/* ------------------------------------ */
+/* hover effect */
+.project-slot:hover {
+  box-shadow: 0px 0px 10px #000000;
+  /* width: 17.1rem;
+  height: 22.1rem; */
+}
+
+#projectSlot:hover {
+  width: 16rem;
+  height: 15rem;
+  cursor: zoom-in;
+}
